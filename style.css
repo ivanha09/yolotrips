@@ -1,0 +1,662 @@
+/* Add any CSS you need to this file. */
+
+/* background-color: rgba(54, 54, 54, 0.7); */
+/* body purple - background-color: rgb(106, 84, 141); */
+
+/* purple color: rgb(207, 153, 72); */
+
+@import 'normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans+JP:wght@500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: rgb(106, 84, 141);
+}
+
+.wrapper {
+  max-width: 930px;
+  margin: auto;
+  background-color: rgba(54, 54, 54, 0.7);
+}
+
+@media screen and (min-width: 760px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  margin: 0;
+  font-weight: 600;
+  color: white;
+}
+
+h3 {
+  font-family: 'Itim', cursive;
+  font-weight: 200;
+  line-height: 1.2em;
+  margin: 0;
+  color: white;
+}
+
+h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* header section */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 15%;
+}
+@media screen and (max-width: 576px) {
+  #header {
+    height: 10%;
+    padding-bottom: 1em;
+  }
+}
+
+#logo img {
+  width: 150px;
+}
+
+#hImgCredit {
+  padding-right: 1em;
+}
+
+#hImgCredit,
+#hImgCredit a {
+  color: rgb(147, 89, 155);
+  font-size: 0.8em;
+}
+
+.hero {
+  padding-left: 15px;
+}
+
+.hero_title {
+  text-transform: uppercase;
+  color: white;
+}
+.hero_subtitle {
+  color: rgb(219, 158, 66);
+  font-size: 2em;
+  font-weight: 400;
+  text-shadow: 5px 5px 20px #1a1919b6;
+  padding-bottom: 1.2em;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background: rgba(91, 34, 138, 0.6);
+  background: -webkit-linear-gradient(rgba(38, 47, 102, 0.8), rgba(138, 34, 98, 0.9)),
+    url('./images/max-bender-FuxYvi-hcWQ-unsplash.jpg');
+  background: linear-gradient(rgba(38, 47, 102, 0.8), rgba(138, 34, 98, 0.9)),
+    url('./images/max-bender-FuxYvi-hcWQ-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+    height: 550px;
+  }
+}
+
+.hero_header {
+  padding-left: 1em;
+  padding-right: 2em;
+}
+
+/* category section */
+
+.category_tab {
+  display: flex;
+  padding-left: 1em;
+  line-height: 5em;
+}
+
+@media screen and (max-width: 576px) {
+  .category_tab {
+    line-height: 4em;
+  }
+}
+
+.button {
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: 0.35s;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button-primary {
+  color: #ffffff;
+  background-color: rgb(211, 139, 32);
+  text-decoration: none;
+  border-radius: 3px;
+  white-space: nowrap;
+  transition: 0.35s;
+}
+
+.button-primary:hover {
+  color: #ffffff;
+  background-color: rgb(168, 111, 25);
+  text-decoration: none;
+}
+
+.button-secondary {
+  color: #ffffff;
+  background-color: rgb(97, 97, 97);
+  text-decoration: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: 0.35s;
+}
+
+@media screen and (max-width: 900px) {
+  .button {
+    padding: 0.5em 1em;
+    margin-right: 0.5em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .button {
+    padding: 0.5em 2em;
+    margin-right: 12px;
+  }
+}
+
+.button_primary,
+.button:hover {
+  color: white;
+  background-color: rgba(214, 162, 65, 0.829);
+}
+
+/* main */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 2em;
+}
+
+main h3 {
+  color: rgb(211, 139, 32);
+}
+
+/* card section */
+
+#list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#list .card_container {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  border-radius: 0.7em;
+  position: relative;
+  background-color: rgb(85, 77, 95);
+  border: 0.2em solid rgb(85, 77, 95);
+}
+
+@media screen and (min-width: 1040px) {
+  #list .card_container {
+    width: 220px;
+    margin: 2em;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  #list .card_container {
+    width: 220px;
+    margin: 1.5em;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #list .card_container {
+    width: 250px;
+    margin: 2em 3em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #list .card_container {
+    width: 240px;
+    margin: 2em 2em;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  #list .card_container {
+    width: 40%;
+    margin: 2em 1.5em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #list .card_container {
+    width: 100%;
+    margin: 2em 1.5em;
+  }
+}
+
+#list .card_container:hover {
+  border: 0.2em solid rgb(122, 78, 161);
+}
+
+#list img {
+  width: 100%;
+  clear: left;
+  background-color: rgb(46, 41, 41);
+  border: white solid;
+  border-width: 5px 5px 30px 5px;
+  box-shadow: 3px 3px 7px #00000049;
+}
+
+#list figcaption {
+  max-width: 100px;
+  left: 5px;
+  font-size: 8px;
+  display: block;
+  float: left;
+  position: absolute;
+  top: 150px;
+}
+
+.caption {
+  color: rgb(255, 255, 255);
+  display: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.displayCaption {
+  color: rgb(122, 78, 161);
+  max-width: 100px;
+  left: 5px;
+  font-size: 8px;
+  display: block;
+  float: left;
+  position: absolute;
+  top: 150px;
+}
+
+figure {
+  position: relative;
+  float: left;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+}
+
+.bottom_card {
+  left: 0px;
+  width: 155px;
+  transform: rotate(-3deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@media screen and (max-width: 576px) {
+  .bottom_card {
+    left: 0%;
+  }
+}
+
+.bottom_card_move {
+  transform: rotate(-10deg);
+}
+
+@media screen and (min-width: 576) {
+  .bottom_card_move {
+    left: -10%;
+  }
+}
+
+.top_card {
+  left: 100px;
+  width: 155px;
+  transform: rotate(5deg);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@media screen and (max-width: 960px) {
+  .top_card {
+    left: 90px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .top_card {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 576) {
+  .top_card {
+    left: 45%;
+  }
+}
+
+.top_card_move {
+  top: -20px;
+  transform: rotate(10deg);
+}
+
+@media screen and (max-width: 960px) {
+  .top_card_move {
+    left: 100px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .top_card_move {
+    left: 70px;
+  }
+}
+
+@media screen and (max-width: 576) {
+  .top_card_move {
+    left: 48%;
+  }
+}
+
+.card_picture {
+  height: 180px;
+}
+
+.cardText {
+  padding: 20px;
+}
+
+.cardText h3 {
+  color: rgb(207, 153, 72);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.cardText h4,
+.cardText p {
+  line-height: 1.6em;
+}
+
+.cardText h4 {
+  color: rgb(219, 200, 25);
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.cardText p {
+  color: rgb(245, 245, 245);
+}
+
+#list a:link {
+  text-decoration: none;
+}
+
+.price {
+  color: rgb(175, 159, 190);
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+/* footer section */
+
+footer a,
+footer a:visited {
+  color: rgb(211, 139, 32);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(136, 83, 180);
+}
+
+#credit {
+  text-align: right;
+}
+
+footer {
+  margin-top: 4em;
+  background: rgba(54, 46, 54, 0.781);
+  padding: 15px;
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+  }
+  #social {
+    text-align: center;
+  }
+  #social a {
+    margin: 1em;
+  }
+  #footer-right,
+  #subscribe {
+    margin: auto;
+    text-align: center;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+.fab {
+  color: white;
+  font-size: 1.5em;
+}
+
+#social li {
+  margin: 0;
+  list-style-type: none;
+  float: left;
+  padding: 0;
+}
+
+#social a {
+  margin-right: 1em;
+  line-height: 2em;
+}
+
+.fab:hover {
+  color: rgb(136, 83, 180);
+}
+
+footer p {
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-size: 0.7em;
+  font-weight: 300;
+  padding: 2em 0;
+}
+
+footer h3 {
+  color: rgb(211, 139, 32);
+  padding-bottom: 0.5em;
+}
+
+/* form */
+
+form {
+  color: rgb(245, 245, 245);
+}
+
+.form-input {
+  background-color: #d2ceda;
+}
+
+.text-mandatory,
+.orange {
+  color: rgb(211, 139, 32);
+}
+
+#subscribe {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  float: right;
+}
+
+@media (max-width: 768px) {
+  #subscribe {
+    padding-top: 1.5em;
+    align-items: center;
+    float: none;
+  }
+}
+
+#ImgCreditContainer {
+  display: flex;
+  justify-content: end;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+}
+
+#menu {
+  padding: 1.3em;
+  border: 1px solid red;
+}
+
+#orderNumber {
+  display: none;
+}
+
+/* TopNav */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background: rgba(54, 46, 54, 0.781);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .textnav,
+.icon {
+  padding: 14px 16px;
+}
+
+.topnav .textnav {
+  float: right;
+}
+
+.topnav #logo {
+  padding: 5px 20px 3px 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: white;
+  background-color: rgb(106, 84, 141);
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: white;
+  background-color: rgb(106, 84, 141);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 576px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 576px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
